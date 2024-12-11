@@ -1,0 +1,311 @@
+
+/* setting up the ham-menu only for the small mobile devices */
+@media screen and (max-width:600px){
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+    
+    }
+    /* menu-list inside hamburger */
+    .menu-list{
+        /* height: 45vh; */
+        height: 100vh;
+
+        width: 240px;
+        max-width: 300px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        transition: .3s ease-in;
+
+        background-color: gray;
+        
+    }
+    
+    .menu-list ul {
+        /* margin-top: 5rem; */
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        
+    }
+
+    .menu-list.active{
+        right: 0;
+        
+    }
+    
+}
+
+/* TABLET DEVICES */
+@media screen and (min-width:600px) and (max-width:1024px) {
+    
+    /* navigation on tablets */
+    .ham-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu-list ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.1rem;
+        font-size: 1.1rem;
+    }
+    .logo{
+
+        font-size: 1.5rem;
+    }
+    
+    /* main section of tablets */
+    .main-body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: 50vh;
+    }
+    img{
+        width: 270px;
+        max-width: 300px;
+    }
+    .main-right .main-mid .main-name{
+        font-size: 1.8rem;
+    }
+    .main-right .main-bottom .buttons .btn{
+        width: 90px;
+    }
+    
+    /* about section on tablets */
+
+    .about-right .about-right2 .about-description{
+        font-size: 1.2rem;
+    }
+
+    /* Skills section */
+    .skill-boxes{
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+    }
+
+
+
+    /* Projects Section */
+    .project-container{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .project1-box{
+        height: 320px;
+        border: 1px solid gray;
+        gap: 7px;
+    }
+    .project2-box{
+        height: 320px;
+        gap: 7px;
+    }
+    .project1-box, .project2-box{
+        width:40%;
+                
+    }
+    .project-container .project1-box .project1-text{
+        text-align: center;
+    }
+    .project1-box img{
+        width: 180px;
+        height: 180px;
+    }
+    .project2-box img{
+        width: 180px;
+        height: 180px;
+    }
+    
+
+    /* Contact Section */
+    .form-container{
+        width: 70%;
+        margin-top: 1rem;
+    }
+    /* Footers section */
+    .footer-text{
+        font-size: 15px;
+    }
+}
+
+
+/* DESKTOP SCREENS */
+@media screen and (min-width:1024px) {
+   nav{
+    display: flex;
+    justify-content: space-around;
+   }    
+
+   .ham-menu{
+    display: none;
+   }
+   .logo{
+    font-size: 2.5rem;
+   }
+   .menu-list ul {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    
+   }
+   /* main body */
+   .main-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+   }
+   .main-body .main-left img{
+    width: 400px;
+    height: 400px;
+   }
+   .main-body .main-left img{
+    width: 380px;
+    height: 390px;
+   } 
+   .main-body .main-right .main-mid{
+    font-size: 2rem;
+   }
+   .main-body .main-right .main-mid .main-name{
+    font-size: 3.8rem;
+   }
+   .main-body .main-right .main-mid span{
+    font-size: 2rem;
+   }
+   .main-right .main-bottom .buttons .btn{
+    width: 150px;
+    padding: 7px;
+    font-size: 1.4rem;
+
+   }
+   .main-right .media-icons .icons{
+    font-size: 1.9rem;
+   }
+
+   /* about section */
+   .about-heading{
+    font-size: 2.2rem;
+   }
+   .about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30rem;
+   }
+   .about-left .about-photo img{
+    width: 400px;
+    height: 400px;
+   }
+   .about-right{
+    width: 60%;
+
+   }
+   .about-right .about-right1{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+   }
+   .about-right .about-right1 .about-experience, .about-right .about-right1 .about-education{
+    width: 45%;
+   }
+   .about-right .about-right2 .about-description{
+    font-size: 1.4rem;
+   }
+
+   /* skills section */
+
+   .container .skill-heading{
+    font-size: 2.4rem;
+   }
+   
+   .skill-boxes {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+   }
+   .skill-boxes .box .skill-text{
+    font-size: 1.5rem;
+   }
+   .container .skill-boxes .box .progress-bar-box .increasing-percentage{
+    font-size: 1.5rem;
+   }
+
+   /* projects section */
+   .project-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    gap: 3rem;
+    height: 500px;
+   }
+   .project-container .project1-box{
+    width: 24%;
+    gap: 5px;
+   }
+   .project-container .project2-box{
+    width: 25%;
+    gap: 5px;
+   }
+
+   /* contact form section */
+   .form-container{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    
+   }
+   label{
+    font-size: 1.3rem;
+    font-weight: 500;
+   }
+   input{
+    font-size: 1.2rem;
+    width: 90%;
+    
+   }
+   textarea{
+    width: 90%;
+   }
+   button[type="submit"]{
+    width: fit-content;
+    padding: 8px;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    border-radius: 15px;
+   }
+
+   /* footer section */
+   .footer-text{
+    font-size: 1.2rem;
+    padding: 3px;
+   }
+}
