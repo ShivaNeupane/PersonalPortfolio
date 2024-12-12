@@ -45,8 +45,6 @@ function typeWriter() {
     }
 }
 
-
-
 // Start the typewriter effect
 document.addEventListener("DOMContentLoaded", () => {
     typeWriter();
@@ -86,7 +84,7 @@ function load_bars(){
 
 
 
-// Contact Form USING JS to save into sheet
+// Contact Form USING JS to save into Google sheet
 
 
 const scriptURL = `https://script.google.com/macros/s/AKfycbwSYpALrlFtrDJDinttmULQ1whx48nZXjpTdqxnE_Y3wMBGB3fVG_Q2SjYF3zIMuxqUyg/exec`

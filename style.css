@@ -23,9 +23,6 @@ body{
     font-size: 1.6rem;
     margin: 15px 6rem 0 0.6rem;
 }
-/* .menu-list{
-    display: none;
-} */
 
 .menu-list a{
     color: black;
@@ -72,8 +69,6 @@ body{
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-
 
 
 /*  MAIN BODY CSS  */
@@ -263,7 +258,6 @@ body{
 
 /* SKILLS SECTION STYLING */
 
-/* Skill Section */
 .skill-heading{
     display: inherit;
     text-align: center;
@@ -374,7 +368,6 @@ body{
     color: black;
 
 }
-/* need to make a button on hovering shows Progress Coming Soon! */
 
 .project2-box a{
     text-decoration: none;
@@ -489,7 +482,7 @@ button[type="submit"]{
     /* font-weight: 600; */
 }
 button[type="submit"]:hover{
-    /* transform: scale(110%); */
+    
     background-color: black;
     color: white;
     
